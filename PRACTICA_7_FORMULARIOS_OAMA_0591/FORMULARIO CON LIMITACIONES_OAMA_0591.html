@@ -1,0 +1,30 @@
+<!-- OYUKI ALEJANDRA MARRUFO ALVARADO -->
+<!-- 0591 -->
+<!-- 5°I -->
+<!DOCTYPE html> <!-- Declara el documento como HTML5 -->
+<html lang="es"> <!-- Abre el documento en español -->
+<head> <!-- Inicio de metadatos -->
+  <meta charset="UTF-8"> <!-- Soporte para acentos y caracteres -->
+  <title>Formulario con Limitaciones</title> <!-- Título de la pestaña -->
+</head> <!-- Fin de metadatos -->
+<body> <!-- Inicio del cuerpo del sitio -->
+
+<h2>Formulario con limitaciones</h2> <!-- Subtítulo principal -->
+<form action="" method="post"> <!-- Formulario (envía vía POST) -->
+
+  <!-- Deshabilitacion de campo --> <!-- Comentario original -->
+  <label for="nombre">Ingresa tu nombre:</label> <!-- Etiqueta para nombre -->
+  <input type="text" id="nombre" name="nombre" disabled><br><br> <!-- Campo inhabilitado (no modificable ni enviable) -->
+
+  <!-- Limitacion de caracteres --> <!-- Comentario original -->
+  <label for="pass">Contraseña:</label> <!-- Etiqueta para contraseña -->
+  <input type="password" id="pass" name="pass" maxlength="5"><br><br> <!-- Campo restringido a máximo 5 caracteres -->
+
+  <!-- Solo lectura --> <!-- Comentario original -->
+  <label for="comentarios">Comentarios:</label><br> <!-- Etiqueta para comentarios -->
+  <textarea id="comentarios" name="comentarios" readonly>Este es mi comentario y no se puede borrar</textarea><br><br> <!-- Campo de solo lectura (no editable, pero sí se envía) -->
+
+</form> <!-- Fin del formulario -->
+
+</body> <!-- Cierre del cuerpo -->
+</html> <!-- Cierre del documento HTML -->

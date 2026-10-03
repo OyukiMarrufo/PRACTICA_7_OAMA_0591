@@ -1,0 +1,52 @@
+<!-- OYUKI ALEJANDRA MARRUFO ALVARADO -->
+<!-- 0591 -->
+<!-- 5°I -->
+<!DOCTYPE html> <!-- Declara el documento como HTML5 -->
+<html lang="es"> <!-- Abre el documento en español -->
+<head> <!-- Inicio de metadatos -->
+  <meta charset="UTF-8"> <!-- Soporte para acentos y caracteres -->
+  <title>Formulario con Agrupamiento</title> <!-- Título de la pestaña -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Carga Font Awesome -->
+</head> <!-- Fin de metadatos -->
+<body> <!-- Inicio del cuerpo del sitio -->
+
+<h2>Formularios con agrupamiento</h2> <!-- Subtítulo principal -->
+<form action="" method="post" enctype="multipart/form-data"> <!-- Formulario con soporte para archivos -->
+
+  <fieldset> <!-- Agrupa el primer conjunto de campos relacionados -->
+    <legend>Datos personales</legend> <!-- Título del grupo de datos personales -->
+
+    <label for="nombre_apellido">Nombre y apellido:</label> <!-- Etiqueta para el nombre -->
+    <input type="text" id="nombre_apellido" name="nombre_apellido"><br><br> <!-- Campo de entrada de texto -->
+
+    <label for="documento">Documento valido:</label> <!-- Etiqueta para la foto/documento -->
+    <input type="file" id="documento" name="documento"><br><br> <!-- Campo para subir archivo -->
+
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label> <!-- Etiqueta para la fecha de nacimiento -->
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"> <!-- Campo con selector de fecha -->
+  </fieldset> <!-- Fin del grupo de datos personales -->
+
+  <br> <!-- Salto de línea entre secciones -->
+
+  <fieldset> <!-- Agrupa el segundo conjunto de campos relacionados -->
+    <legend>Datos de estudio:</legend> <!-- Título del grupo de datos académicos -->
+
+    <label for="escuela">Nombre de la escuela:</label> <!-- Etiqueta para la escuela -->
+    <input type="text" id="escuela" name="escuela"><br><br> <!-- Campo de entrada de texto -->
+
+    <label for="certificado">Certificado valido:</label> <!-- Etiqueta para el certificado -->
+    <input type="file" id="certificado" name="certificado"><br><br> <!-- Campo para subir archivo -->
+
+    <label for="fecha_egreso">Fecha de egreso:</label> <!-- Etiqueta para la fecha de egreso -->
+    <input type="date" id="fecha_egreso" name="fecha_egreso"> <!-- Campo con selector de fecha -->
+  </fieldset> <!-- Fin del grupo de datos de estudio -->
+
+  <br> <!-- Salto de línea -->
+
+  <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button> <!-- Botón de envío con ícono -->
+  <button type="reset">Borrar <i class="fa fa-trash"></i></button> <!-- Botón de borrado con ícono -->
+
+</form> <!-- Fin del formulario -->
+
+</body> <!-- Fin del cuerpo -->
+</html> <!-- Fin del documento HTML -->
